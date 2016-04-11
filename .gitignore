@@ -3,7 +3,7 @@
 .gradle
 /build
 /buildSrc/build
-/subprojects/*/build
+/*/build
 
 # IDEA
 # ----

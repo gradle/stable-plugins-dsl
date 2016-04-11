@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-  <groupId>nebula.nebula-provided-base</groupId>
-  <artifactId>nebula.nebula-provided-base</artifactId>
+  <groupId>nebula.provided-base</groupId>
+  <artifactId>nebula.provided-base</artifactId>
   <versioning>
     <release>1.12.0-dev</release>
     <versions>
       <version>1.12.0-dev</version>
     </versions>
-    <lastUpdated>20160411152337</lastUpdated>
+    <lastUpdated>20160411163742</lastUpdated>
   </versioning>
 </metadata>
