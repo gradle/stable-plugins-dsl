@@ -1,0 +1,54 @@
+plugins {
+  id "maven-publish"
+}
+
+def nebulaContactsDep =
+
+publishing {
+  publications {
+    nebulaContacts(MavenPublication) {
+      groupId 'nebula.contacts'
+      artifactId 'nebula.contacts'
+      version '3.0.1-dev'
+      pom.withXml {
+	asNode().children().last() + {
+	  delegate.dependencies {
+	    delegate.dependency {
+	      delegate.groupId 'com.netflix.nebula'
+	      delegate.artifactId 'gradle-contacts-plugin'
+	      delegate.version '3.0.1-dev'
+	    }
+	  }
+	}
+      }
+    }
+    nebulaExtraConfigurations(MavenPublication) {
+      groupId 'nebula.nebula-provided-base'
+      artifactId 'nebula.nebula-provided-base'
+      version '1.12.0-dev'
+      pom.withXml {
+	asNode().children().last() + {
+	  delegate.dependencies {
+	    delegate.dependency {
+	      delegate.groupId 'com.netflix.nebula'
+	      delegate.artifactId 'gradle-extra-configurations-plugin'
+	      delegate.version '1.12.0-dev'
+	    }
+	  }
+	}
+      }
+    }
+  }
+}
+
+task publishAll(dependsOn: ['publishNebulaContactsPublicationToStablePluginsRepository',
+			    'publishNebulaExtraConfigurationsPublicationToStablePluginsRepository'])
+
+publishing {
+  repositories {
+    maven {
+      name "stablePlugins"
+      url "../maven-repo"
+    }
+  }
+}
