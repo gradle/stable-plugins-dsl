@@ -3,10 +3,11 @@
   <groupId>com.netflix.nebula</groupId>
   <artifactId>gradle-contacts-plugin</artifactId>
   <versioning>
-    <release>3.1.0-dev.14+2938b0c</release>
+    <release>3.1.0-dev</release>
     <versions>
       <version>3.1.0-dev.14+2938b0c</version>
+      <version>3.1.0-dev</version>
     </versions>
-    <lastUpdated>20160411140424</lastUpdated>
+    <lastUpdated>20160411195352</lastUpdated>
   </versioning>
 </metadata>
