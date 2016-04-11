@@ -16,7 +16,7 @@ publishing {
 	    delegate.dependency {
 	      delegate.groupId 'com.netflix.nebula'
 	      delegate.artifactId 'gradle-contacts-plugin'
-	      delegate.version '3.0.1-dev'
+	      delegate.version '3.1.0-dev'
 	    }
 	  }
 	}
@@ -32,7 +32,7 @@ publishing {
 	    delegate.dependency {
 	      delegate.groupId 'com.netflix.nebula'
 	      delegate.artifactId 'gradle-extra-configurations-plugin'
-	      delegate.version '1.12.0-dev'
+	      delegate.version '3.1.0-dev'
 	    }
 	  }
 	}
