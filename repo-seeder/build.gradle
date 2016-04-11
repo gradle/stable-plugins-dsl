@@ -23,8 +23,8 @@ publishing {
       }
     }
     nebulaExtraConfigurations(MavenPublication) {
-      groupId 'nebula.nebula-provided-base'
-      artifactId 'nebula.nebula-provided-base'
+      groupId 'nebula.provided-base'
+      artifactId 'nebula.provided-base'
       version '1.12.0-dev'
       pom.withXml {
 	asNode().children().last() + {
