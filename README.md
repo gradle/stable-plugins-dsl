@@ -42,9 +42,7 @@ Engineers: Pepper Lebeck-Jobe ([pepper@gradle.com](mailto:pepper@gradle.com)), S
 
 ## Development Process
 
-* Separate [Github repository](https://github.com/gradle/stable-plugins-dsl) for sharing examples and issues with Netflix 
-
-* ZenHub on top to track progress
+* ZenHub on top of GitHub issues to track progress
 
 * [Design documents](https://drive.google.com/drive/u/2/folders/0BwVajzeZP7mkRlBRak81elNMVnc) are iterated on in Google Docs and then checked into gradle/gradle
 

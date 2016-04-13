@@ -1,0 +1,49 @@
+plugins {
+  id 'java-gradle-plugin'
+  id 'maven-publish'
+}
+
+group 'org.example'
+version '1.0.0'
+
+def withDependencyOnMainArtifact = {publication ->
+    publication.pom.withXml {
+        asNode().children().last() + {
+            delegate.dependencies {
+                delegate.dependency {
+                    delegate.groupId project.group
+                    delegate.artifactId project.name
+                    delegate.version project.version
+                }
+            }
+        }
+    }
+}
+
+publishing {
+  publications {
+    plugins(MavenPublication) {
+      from components.java
+    }
+    helloMarker(MavenPublication) {marker ->
+      groupId 'org.example.hello'
+      artifactId 'org.example.hello'
+      version project.version
+      withDependencyOnMainArtifact(marker)
+    }
+    goodbyeMarker(MavenPublication) {marker ->
+      groupId 'org.example.goodbye'
+      artifactId 'org.example.goodbye'
+      version project.version
+      withDependencyOnMainArtifact(marker)
+    }
+  }
+}
+
+publishing {
+  repositories {
+    maven {
+      url "../maven-repo"
+    }
+  }
+}
