@@ -13,13 +13,9 @@ maven-repo
 # ----
 .idea
 .shelf
-/*.iml
-/*.ipr
-/*.iws
-/buildSrc/*.iml
-/buildSrc/*.ipr
-/buildSrc/*.iws
-/buildSrc/out
+*.iml
+*.ipr
+*.iws
 /out
 
 # Eclipse
