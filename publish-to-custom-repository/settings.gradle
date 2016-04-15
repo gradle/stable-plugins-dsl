@@ -1,1 +1,4 @@
+include 'plugins'
+include 'repoServer'
+
 rootProject.name="example-plugins"
