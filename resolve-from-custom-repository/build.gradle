@@ -1,4 +1,10 @@
 plugins {
   id "org.example.hello" version "1.0.0"
   id "org.example.goodbye" version "1.0.0"
+  // id "org.example.doesNotExist" version "6.6.6" // Uncomment to see what a failure looks like.
+}
+
+// Demonstrates that plugin classes are available during scripting.
+plugins.withType(org.example.hello.HelloPlugin) {
+  println "Whaddya know?"
 }
