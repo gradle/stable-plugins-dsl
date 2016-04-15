@@ -7,6 +7,10 @@ This example project demonstrates how plugins can be published to a custom Maven
 - run `./gradlew publish`
 - the plugins in this project will be published to `../maven-repo`
 
+Alternatively, you can:
+- run `./gradlew run`
+- `run` depends on `plublish` and also runs a simple jetty server to serve the repo over http.
+
 ## Project Structure
 
 - this project currently contains two simple plugins that each add a task

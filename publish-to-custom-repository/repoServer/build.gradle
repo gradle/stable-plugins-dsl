@@ -1,0 +1,15 @@
+plugins {
+  id 'application'
+}
+
+mainClassName = 'org.example.repo.server.MavenRepoServer'
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  compile 'org.eclipse.jetty:jetty-server:9.3.7.v20160115'
+}
+
+run.dependsOn(':plugins:publish')
