@@ -10,6 +10,11 @@ repository.
 - try resolving other plugins to see that failure is handled gracefully
 and that resolving from the Plugin Portal still works
 
+If you ran the Jetty server from the [example plugins](../publish-to-custom-reposiotry), you can specify
+that repo using:
+
+- `./gradlew hello -Dorg.gradle.plugin.repoUrl=http://localhost:8080` in a separate console
+
 ## Project Structure
 
 - `build.gradle` references a plugin published by the example plugins project
