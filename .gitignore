@@ -7,7 +7,7 @@ maven-repo
 .gradle
 /build
 /buildSrc/build
-/*/build
+build
 
 # IDEA
 # ----
