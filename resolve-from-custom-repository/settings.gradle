@@ -1,1 +1,7 @@
+pluginRepositories {
+  maven {
+    url file('../maven-repo')
+  }
+}
+
 rootProject.name = 'custom-repositories'

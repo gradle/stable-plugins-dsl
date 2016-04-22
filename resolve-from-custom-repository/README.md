@@ -11,12 +11,16 @@ repository.
 and that resolving from the Plugin Portal still works
 
 If you ran the Jetty server from the [example plugins](../publish-to-custom-reposiotry), you can specify
-that repo using:
+that in the [settings.gradle](settings.gradle) file:
 
-- `./gradlew hello -Dorg.gradle.plugin.repoUrl=http://localhost:8080` in a separate console
+```
+pluginRepositories {
+  maven {
+    url 'http://localhost:8080'
+  }
+}
+```
 
 ## Project Structure
 
 - `build.gradle` references a plugin published by the example plugins project
-- `gradle.properties` sets up the system property pointing to the custom Maven repository.
-This mechanism will be replaced by a more sophisticated repository declaration as part of milestone 1.2.
