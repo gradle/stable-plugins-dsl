@@ -24,3 +24,4 @@ pluginRepositories {
 ## Project Structure
 
 - `build.gradle` references a plugin published by the example plugins project
+- `settings.gradle` sets up a maven repo based on the `../maven-repo` directory
