@@ -16,7 +16,7 @@ Some larger enterprise users invest a lot of time and energy into setting up int
 
 ## Solution
 
-Please see the [detailed roadmap](https://docs.google.com/document/d/18w0SkzPXYKOvDL85ixAynmKMAasa6akb2voum56uAuw) of what we are trying to do for the Netflix engagement. The key deliverables are:
+The key milestones are:
 
 1. Resolve plugins from a maven/ivy repository based on the plugin id
 
@@ -30,7 +30,7 @@ Please see the [detailed roadmap](https://docs.google.com/document/d/18w0SkzPXYK
 
 4. Support locking versions of plugins in version control to increase build reproducibility
 
-On the currently approved Statement of Work (SOW) for this project, we are committed to delivering #1 and #2. #3 and #4 are still being negotiated.
+We are currently committed to delivering #1 and #2. #3 and #4 are still being prioritized.
 
 ## Gradle Team
 
@@ -47,8 +47,6 @@ Engineers: Pepper Lebeck-Jobe ([pepper@gradle.com](mailto:pepper@gradle.com)), S
 * [Design documents](https://drive.google.com/drive/u/2/folders/0BwVajzeZP7mkRlBRak81elNMVnc) are iterated on in Google Docs and then checked into gradle/gradle
 
 * Weekly team meeting
-
-* Weekly meeting with Netflix
 
 * Weekly stream update on discourse
 
