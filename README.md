@@ -44,7 +44,7 @@ Engineers: Pepper Lebeck-Jobe ([pepper@gradle.com](mailto:pepper@gradle.com)), S
 
 * ZenHub on top of GitHub issues to track progress
 
-* [Design documents](https://drive.google.com/drive/u/2/folders/0BwVajzeZP7mkRlBRak81elNMVnc) are iterated on in Google Docs and then checked into gradle/gradle
+* [Design documents](https://drive.google.com/open?id=0BxRmJKIW0-iSV05CZm5jVUZrTDA) are iterated on in Google Docs and then checked into gradle/gradle
 
 * Weekly team meeting
 
