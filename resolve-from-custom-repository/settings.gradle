@@ -1,6 +1,6 @@
 pluginRepositories {
   maven {
-    url file('../maven-repo')
+    url '../maven-repo'
   }
 }
 
