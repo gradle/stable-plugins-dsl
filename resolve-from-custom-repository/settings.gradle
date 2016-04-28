@@ -2,6 +2,9 @@ pluginRepositories {
   maven {
     url '../maven-repo'
   }
+  ivy {
+    url '../ivy-repo'
+  }
 }
 
 rootProject.name = 'custom-repositories'
