@@ -10,16 +10,8 @@ repository.
 - try resolving other plugins to see that failure is handled gracefully
 and that resolving from the Plugin Portal still works
 
-If you ran the Jetty server from the [example plugins](../publish-to-custom-reposiotry), you can specify
-that in the [settings.gradle](settings.gradle) file:
-
-```
-pluginRepositories {
-  maven {
-    url 'http://localhost:8080'
-  }
-}
-```
+You can also run the the Http repo server in [example plugins](../publish-to-custom-reposiotry)
+and uncomment it in `settings.gradle` to see authentication in action.
 
 ## Project Structure
 
