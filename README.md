@@ -34,17 +34,17 @@ We are currently committed to delivering #1 and #2. #3 and #4 are still being pr
 
 ## Gradle Team
 
-Technical Leadership: Luke Daley ([luke@gradle.com](mailto:luke@gradle.com))
+Technical Leadership: Luke Daley [@alkemist](https://github.com/alkemist)
 
 Engineering Coordination: Piotr Jagielski ([piotr@gradle.com](mailto:piotr@gradle.com))
 
-Engineers: Pepper Lebeck-Jobe ([pepper@gradle.com](mailto:pepper@gradle.com)), Stefan Oehme ([stefan@gradle.com](mailto:stefan@gradle.com))
+Engineers: Pepper Lebeck-Jobe [@eljobe](https://github.com/alkemist), Stefan Oehme [@oehme](https://github.com/oehme)
 
 ## Development Process
 
 * ZenHub on top of GitHub issues to track progress
 
-* [Design documents](https://drive.google.com/open?id=0BxRmJKIW0-iSV05CZm5jVUZrTDA) are iterated on in Google Docs and then checked into gradle/gradle
+* [Design documents](https://github.com/gradle/gradle/tree/master/design-docs/features/stable-plugins-dsl) are iterated on in Google Docs and then checked into gradle/gradle
 
 * Weekly team meeting
 
