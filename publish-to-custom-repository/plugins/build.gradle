@@ -7,13 +7,15 @@ plugins {
 group 'org.example'
 version '1.0.0'
 
-publishing {
-  publications {
-    mavenPlugins(MavenPublication) {
-      from components.java
+gradlePlugin {
+  plugins {
+    hello {
+      id = "org.example.hello"
+      implementationClass = "org.example.hello.HelloPlugin"
     }
-    ivyPlugins(IvyPublication) {
-      from components.java
+    goodbye {
+      id = "org.example.goodbye"
+      implementationClass = "org.example.goodbye.GoodbyePlugin"
     }
   }
 }
