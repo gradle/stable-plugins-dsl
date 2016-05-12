@@ -7,69 +7,6 @@ plugins {
 group 'org.example'
 version '1.0.0'
 
-def withDependencyOnMainArtifact = {publication ->
-  publication.pom.withXml {
-    asNode().children().last() + {
-      delegate.dependencies {
-        delegate.dependency {
-          delegate.groupId project.group
-          delegate.artifactId project.name
-          delegate.version project.version
-        }
-      }
-    }
-  }
-}
-
-def withDependencyOnMainIvyArtifact = {publication ->
-  publication.descriptor.withXml {
-    asNode().dependencies[0].replaceNode {
-      delegate.dependencies {
-        delegate.dependency (
-	  org: project.group,
-          name: project.name,
-	  rev: project.version
-        )
-      }
-    }
-  }
-}
-
-publishing {
-  publications {
-    plugins(MavenPublication) {
-      from components.java
-    }
-    helloMarker(MavenPublication) {marker ->
-      groupId 'org.example.hello'
-      artifactId 'org.example.hello'
-      version project.version
-      withDependencyOnMainArtifact(marker)
-    }
-    goodbyeMarker(MavenPublication) {marker ->
-      groupId 'org.example.goodbye'
-      artifactId 'org.example.goodbye'
-      version project.version
-      withDependencyOnMainArtifact(marker)
-    }
-    pluginsIvy(IvyPublication) {
-      from components.java
-    }
-    helloIvyMarker(IvyPublication) {marker ->
-      organisation 'org.example.hello'
-      module 'org.example.hello'
-      revision project.version
-      withDependencyOnMainIvyArtifact(marker)
-    }
-    goodbyeIvyMarker(IvyPublication) {marker ->
-      organisation 'org.example.goodbye'
-      module 'org.example.goodbye'
-      revision project.version
-      withDependencyOnMainIvyArtifact(marker)
-    }
-  }
-}
-
 publishing {
   repositories {
     maven {
