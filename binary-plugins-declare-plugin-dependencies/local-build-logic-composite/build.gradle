@@ -1,0 +1,4 @@
+plugins {
+    id("com.example.foo")   // Should work as it is an api dependency
+    id("com.example.hello") // Should fail as it is an implementation dependency
+}

@@ -1,0 +1,11 @@
+plugins {
+    from("greetings.gradle")
+}
+
+helloExtension {
+    message = "Hola"
+}
+
+goodbyeExtension {
+    message = "Hasta la vista"
+}

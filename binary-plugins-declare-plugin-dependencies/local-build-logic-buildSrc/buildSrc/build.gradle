@@ -1,0 +1,6 @@
+
+dependencies {
+    // No api/implementation distinction here as buildSrc runtime classpath
+    // is visible to the build scripts
+    compile(plugin(id("com.example.hello") version "1.0"))
+}

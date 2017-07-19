@@ -1,0 +1,4 @@
+plugins {
+    from("hello.gradle")
+}
+

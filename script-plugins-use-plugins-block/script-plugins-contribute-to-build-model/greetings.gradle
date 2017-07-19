@@ -1,0 +1,13 @@
+
+plugins {
+    id("com.example.hello") version "1.0"
+    id("com.example.goodbye") version "1.0"
+}
+
+helloExtension {
+    message = "Bonjour"
+}
+
+goodbyeExtension {
+    message = "Au-revoir"
+}

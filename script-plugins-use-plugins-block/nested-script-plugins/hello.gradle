@@ -1,0 +1,10 @@
+
+plugins {
+    from("goodbye.gradle")
+}
+
+task hello {
+    doLast {
+        println("Hello!")
+    }
+}

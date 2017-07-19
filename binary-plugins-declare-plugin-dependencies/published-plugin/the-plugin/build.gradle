@@ -1,0 +1,27 @@
+plugins {
+    id("java-gradle-plugin")
+}
+
+group = "com.example"
+version = "1.0"
+
+gradlePlugin {
+    plugins {
+        greetings {
+            id = "com.example.greetings"
+            implementationClass = "..."
+            pluginDependencies {
+                api("com.example.hello") version "1.0"
+                implementation("com.example.output") version "1.0"
+            }
+        }
+        chucknorris {
+            id "com.example.chucknorris"
+            implementationClass = "..."
+            pluginDependencies {
+                // TODO Define version conflict resolution
+                implementation("com.example.output") version "1.0"
+            }
+        }
+    }
+}

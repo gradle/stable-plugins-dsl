@@ -1,0 +1,4 @@
+plugins {
+    id("com.example.greetings") version "1.0"
+    id("com.example.chucknorris") version "1.0"
+}

@@ -1,0 +1,4 @@
+plugins {
+    id("hello") from "hello.gradle" apply false
+    id("goodbye") from "goodbye.gradle" apply false
+}

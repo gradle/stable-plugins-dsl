@@ -1,0 +1,5 @@
+
+dependencies {
+    api(plugin(id("com.example.foo") version "1.0"))
+    implementation(plugin(id("com.example.hello") version "1.0"))
+}
