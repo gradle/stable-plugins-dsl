@@ -1,16 +1,18 @@
-pluginRepositories {
-  maven {
-    url '../maven-repo'
-  }
-  /*
-  maven {
-    url 'http://localhost:8080'
-    credentials {
-        username 'admin'
-        password 'admin'
+pluginManagement {
+    repositories {
+        maven {
+          url '../maven-repo'
+        }
+        /*
+        maven {
+          url 'http://localhost:8080'
+          credentials {
+              username 'admin'
+              password 'admin'
+          }
+        }
+        */
     }
-  }
-  */
 }
 
 rootProject.name = 'custom-repositories'
