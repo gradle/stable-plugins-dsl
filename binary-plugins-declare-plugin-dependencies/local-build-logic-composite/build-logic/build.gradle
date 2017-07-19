@@ -1,5 +1,5 @@
 
 dependencies {
     api(plugin("com.example.foo") version "1.0")
-    implementation(plugin("com.example.hello") version "1.0")
+    implementation(plugin("com.example.hello") version "1.0" apply false)
 }

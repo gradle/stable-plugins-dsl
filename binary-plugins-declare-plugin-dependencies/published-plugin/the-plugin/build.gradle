@@ -12,7 +12,7 @@ gradlePlugin {
             implementationClass = "..."
             pluginDependencies {
                 api("com.example.hello") version "1.0"
-                implementation("com.example.output") version "1.0"
+                implementation("com.example.output") version "1.0" apply false
             }
         }
         chucknorris {
@@ -20,7 +20,7 @@ gradlePlugin {
             implementationClass = "..."
             pluginDependencies {
                 // TODO Define version conflict resolution
-                implementation("com.example.output") version "1.0"
+                implementation("com.example.output") version "1.0" apply false
             }
         }
     }

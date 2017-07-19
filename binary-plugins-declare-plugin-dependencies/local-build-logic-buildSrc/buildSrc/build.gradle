@@ -3,4 +3,5 @@ dependencies {
     // No api/implementation distinction here as buildSrc runtime classpath
     // is visible to the build scripts
     compile(plugin("com.example.hello") version "1.0")
+    compile(plugin("com.example.goodbye") version "1.0" apply false)
 }
